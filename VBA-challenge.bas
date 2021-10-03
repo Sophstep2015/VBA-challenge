@@ -6,7 +6,6 @@ Dim sheet As Worksheet
 For Each sheet In ActiveWorkbook.Worksheets
 sheet.Activate
 
-
 'Declare Variables
 Dim Ticker As String
 Dim yopen, yclose, totalvol, yc, pc As Double
@@ -15,12 +14,10 @@ Dim lrow As Double
 Dim count As Double
 Dim j As Long
 
-
 'Set summary location and total stock volume
 summary = 2
 totalsvol = 0
 lrow = Cells(Rows.count, 1).End(xlUp).Row
-
 
 'Set Sheet Headers
 Cells(1, 9).Value = "Ticker"
@@ -32,7 +29,6 @@ Cells(1, 12).Value = "Total Stock Volume"
 Cells(2, 15).Value = "Greatest % Increase"
 Cells(3, 15).Value = "Greatest % Decrease"
 Cells(4, 15).Value = "Greatest Total Volume"
-
 
 'Establish loop through ticker
 
@@ -64,7 +60,7 @@ End If
            yclose = Cells(i, 6).Value
            yc = yclose - yopen
            
-'account for if stock has zero value
+'Account for if stock has zero value
         If yopen = 0 And yclose = 0 Then
             pc = 0
         Else

@@ -67,7 +67,7 @@ End If
             pc = yc / yopen
         End If
     
-'insert into summary table
+'Insert into summary table
         Range("I" & summary).Value = Ticker
         Range("L" & summary).Value = totalsvol
         Range("J" & summary).Value = yc
@@ -80,9 +80,7 @@ summary = summary + 1
 'Reset total volumne
 totalsvol = 0
  
-
 End If
-
 
 Next i
 

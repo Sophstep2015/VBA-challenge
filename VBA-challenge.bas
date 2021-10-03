@@ -81,7 +81,7 @@ End If
 
 summary = summary + 1
 
-'reset total volumne
+'Reset total volumne
 totalsvol = 0
  
 

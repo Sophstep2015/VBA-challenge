@@ -16,13 +16,13 @@ Dim count As Double
 Dim j As Long
 
 
-'set summary location and total stock volume
+'Set summary location and total stock volume
 summary = 2
 totalsvol = 0
 lrow = Cells(Rows.count, 1).End(xlUp).Row
 
 
-' Set Sheet Headers
+'Set Sheet Headers
 Cells(1, 9).Value = "Ticker"
 Cells(1, 16).Value = "Ticker"
 Cells(1, 17).Value = "Value"
